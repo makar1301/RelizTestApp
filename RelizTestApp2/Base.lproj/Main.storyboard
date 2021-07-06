@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,202 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RelizTestApp2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heu-ZN-IFw">
+                                <rect key="frame" x="24" y="94" width="367" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="Uzw-rU-koO"/>
+                                    <constraint firstAttribute="height" constant="24" id="nLW-c5-PHg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fx5-KH-yoV">
+                                <rect key="frame" x="24" y="756" width="367" height="56"/>
+                                <color key="backgroundColor" red="0.53725490200000003" green="0.59215686270000001" blue="0.95686274510000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="VWk-zf-aBJ"/>
+                                    <constraint firstAttribute="height" constant="56" id="gSB-vg-Zmy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
+                                <state key="normal" title="Screen 1 Pop-Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="popUpTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbw-tz-pkg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSA-6n-mig">
+                                <rect key="frame" x="24" y="684" width="367" height="56"/>
+                                <color key="backgroundColor" red="0.53725490200000003" green="0.59215686270000001" blue="0.95686274510000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="1ST-JX-oTk"/>
+                                    <constraint firstAttribute="height" constant="56" id="NsV-e8-cTn"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="56" id="QpK-tB-d7a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
+                                <state key="normal" title="Screen 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="screen1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iio-YB-u2b"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="heu-ZN-IFw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="8bZ-3D-RBq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fx5-KH-yoV" secondAttribute="trailing" constant="23" id="Jiq-HL-dim"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OSA-6n-mig" secondAttribute="trailing" constant="23" id="SHp-3O-r7P"/>
+                            <constraint firstItem="fx5-KH-yoV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="SUl-WT-KzH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="heu-ZN-IFw" secondAttribute="trailing" constant="23" id="Uuv-8M-Vqs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fx5-KH-yoV" secondAttribute="bottom" constant="50" id="YAp-SU-gHV"/>
+                            <constraint firstItem="heu-ZN-IFw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="oGJ-Wt-9uP"/>
+                            <constraint firstItem="OSA-6n-mig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="siy-ut-I6z"/>
+                            <constraint firstItem="fx5-KH-yoV" firstAttribute="top" secondItem="OSA-6n-mig" secondAttribute="bottom" constant="16" id="ysp-PC-Knm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="Roc-Yk-pjN" id="dfX-vL-bf1"/>
+                        <outlet property="firstButton" destination="Tv0-nr-eAk" id="eeA-1j-wBO"/>
+                        <outlet property="mainView" destination="vSr-Ch-fcL" id="SoT-gz-n4P"/>
+                        <outlet property="menuLabel" destination="heu-ZN-IFw" id="dn8-dx-3lN"/>
+                        <outlet property="popUpButton" destination="fx5-KH-yoV" id="Qp4-gV-QSf"/>
+                        <outlet property="screen1Button" destination="OSA-6n-mig" id="nX9-WX-nTh"/>
+                        <outlet property="screenTitle" destination="dJT-R3-ENO" id="a7u-wr-1ac"/>
+                        <outlet property="secondButton" destination="he6-zs-9ME" id="EmZ-0U-bLc"/>
+                        <outlet property="thirdButton" destination="QLD-zW-Eb9" id="40O-py-Hqn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="vSr-Ch-fcL">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="l2j-Qq-raD">
+                            <rect key="frame" x="24" y="602" width="367" height="200"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tv0-nr-eAk">
+                                    <rect key="frame" x="0.0" y="0.0" width="367" height="56"/>
+                                    <color key="backgroundColor" red="0.53725490200000003" green="0.59215686270000001" blue="0.95686274510000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="mIg-hc-cpM"/>
+                                        <constraint firstAttribute="height" constant="56" id="utu-uc-m0f"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
+                                    <state key="normal" title="Screen 1">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="28"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="firstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9TY-Bg-XJn"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he6-zs-9ME">
+                                    <rect key="frame" x="0.0" y="72" width="367" height="56"/>
+                                    <color key="backgroundColor" red="0.53725490200000003" green="0.59215686270000001" blue="0.95686274510000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="56" id="HoJ-dX-kqH"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="lLt-eV-XJp"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
+                                    <state key="normal" title="Screen 1">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="28"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="secondButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hvE-Sr-VQy"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLD-zW-Eb9">
+                                    <rect key="frame" x="0.0" y="144" width="367" height="56"/>
+                                    <color key="backgroundColor" red="0.53725490200000003" green="0.59215686270000001" blue="0.95686274510000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="2QR-sP-BOZ"/>
+                                        <constraint firstAttribute="height" constant="56" id="Buu-WH-0wk"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
+                                    <state key="normal" title="Screen 1">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="28"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="thirdButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RUe-ix-TNY"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJT-R3-ENO">
+                            <rect key="frame" x="177.5" y="94" width="59" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="quL-We-2ot"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Roc-Yk-pjN">
+                            <rect key="frame" x="33" y="96" width="12" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="99M-Fb-9Rd"/>
+                                <constraint firstAttribute="width" constant="12.119999999999999" id="cOw-eY-tmq"/>
+                            </constraints>
+                            <color key="tintColor" red="0.53725490200000003" green="0.59215686270000001" blue="0.95686274510000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleColor" red="0.53725490200000003" green="0.59215686270000001" blue="0.95686274510000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <imageReference key="image" image="chevron.left" catalog="system" symbolScale="large" renderingMode="template"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="medium"/>
+                            </state>
+                            <connections>
+                                <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U2z-Vx-4Ka"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="Zax-Dv-W5F"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Zax-Dv-W5F" firstAttribute="bottom" secondItem="l2j-Qq-raD" secondAttribute="bottom" constant="50" id="4Cf-oH-vPW"/>
+                        <constraint firstItem="dJT-R3-ENO" firstAttribute="centerX" secondItem="vSr-Ch-fcL" secondAttribute="centerX" id="Aei-Su-9oo"/>
+                        <constraint firstItem="Roc-Yk-pjN" firstAttribute="centerY" secondItem="dJT-R3-ENO" secondAttribute="centerY" id="LUk-Rp-X6S"/>
+                        <constraint firstItem="Zax-Dv-W5F" firstAttribute="trailing" secondItem="l2j-Qq-raD" secondAttribute="trailing" constant="23" id="fvS-DW-CG9"/>
+                        <constraint firstItem="l2j-Qq-raD" firstAttribute="leading" secondItem="Zax-Dv-W5F" secondAttribute="leading" constant="24" id="fxX-br-PYy"/>
+                        <constraint firstItem="Roc-Yk-pjN" firstAttribute="leading" secondItem="Zax-Dv-W5F" secondAttribute="leading" constant="33" id="j6S-1O-bYK"/>
+                        <constraint firstItem="dJT-R3-ENO" firstAttribute="top" secondItem="Zax-Dv-W5F" secondAttribute="top" constant="50" id="p0Z-8g-lcK"/>
+                    </constraints>
+                </view>
             </objects>
+            <point key="canvasLocation" x="290" y="97"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+    </resources>
 </document>
