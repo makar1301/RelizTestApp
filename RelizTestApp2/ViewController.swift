@@ -38,13 +38,19 @@ class ViewController: UIViewController {
     
     // MARK: - In-Way Animation
     func buttonAnimationIn() {
-        UIView.animate(withDuration: 0.4) {
+        UIView.animate(withDuration: 0.6) {
             self.firstButton.transform = CGAffineTransform(translationX: 0, y: -150)
             self.secondButton.transform = CGAffineTransform(translationX: 0, y: -150)
             self.thirdButton.transform = CGAffineTransform(translationX: 0, y: -150)
             self.backButton.transform = CGAffineTransform(translationX: 0, y: -150)
             self.screenTitle.transform = CGAffineTransform(translationX: 0, y: -150)
             
+            
+            self.firstButton.alpha = 1.0
+            self.secondButton.alpha = 1.0
+            self.thirdButton.alpha = 1.0
+            self.backButton.alpha = 1.0
+            self.screenTitle.alpha = 1.0
         }
         self.firstButton.transform = CGAffineTransform.identity
         self.secondButton.transform = CGAffineTransform.identity
@@ -55,12 +61,20 @@ class ViewController: UIViewController {
     
     // MARK: - Out-Way Animation
     func buttonAnimationOut() {
-        UIView.animate(withDuration: 0.15) {
+        UIView.animate(withDuration: 0.2) {
             self.firstButton.transform = CGAffineTransform(translationX: 0, y: -20)
             self.secondButton.transform = CGAffineTransform(translationX: 0, y: -20)
             self.thirdButton.transform = CGAffineTransform(translationX: 0, y: -20)
             self.backButton.transform = CGAffineTransform(translationX: 0, y: -50)
             self.screenTitle.transform = CGAffineTransform(translationX: 0, y: -50)
+            
+            
+            
+            self.firstButton.alpha = 0.0
+            self.secondButton.alpha = 0.0
+            self.thirdButton.alpha = 0.0
+            self.backButton.alpha = 0.0
+            self.screenTitle.alpha = 0.0
         }
        
     }
